@@ -21,8 +21,9 @@ export const getCharacterById = async (req, res) => {
         if (!character) {
             return res.status(404).json({error: "Personaje no encontrado"});
         }
-    } catch {
-
+        res.status(200).json(character)
+    } catch (error) {
+        res.status(500).json({ error: "Error al obtener el personaje"})
     }
 };
 
@@ -43,7 +44,7 @@ export const createCharacter = async (req, res) => {
         }
         const newCharacter = await Characters.create({
         name,
-        ki: parseInt,
+        ki: parseInt(ki),
         race,
         gender,
         description,

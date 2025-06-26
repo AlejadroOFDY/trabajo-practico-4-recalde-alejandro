@@ -4,7 +4,7 @@ import dotenv from "dotenv"; //dotenv sirve para las variables de entorno (.env)
 
 dotenv.config(); // lee el archivo .env
 const app = express();
-const PORT = 3306;
+const PORT = 3000;
 
 // convierte la información en json
 app.use(express.json());

@@ -8,7 +8,7 @@ const Characters = sequelize.define("Character", {
     allowNull: false,
     unique: true, // unique es para evitar duplicados
   },
-  ki: { type: DataTypes.STRING, allowNull: false },
+  ki: { type: DataTypes.INTEGER, allowNull: false, validate: { isInt: true} },
   race: { type: DataTypes.STRING, allowNull: false },
   gender: {
     type: DataTypes.STRING,
