@@ -1,6 +1,8 @@
 import express from "express";
 import rutaPersonajes from "./src/routes/character.routes.js";
+import dotenv from "dotenv"; //dotenv sirve para las variables de entorno (.env) mantiendolas ocultas
 
+dotenv.config(); // lee el archivo .env
 const app = express();
 const PORT = 3306;
 

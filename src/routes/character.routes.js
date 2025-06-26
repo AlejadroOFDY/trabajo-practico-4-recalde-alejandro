@@ -6,14 +6,14 @@ import {
     updateCharacter,
     deleteCharacter,
 
-} from "../routes/character.controllers.js";
+} from "../controllers/characters.controllers.js";
 
 const router = Router();
 
 router.get("/", getAllCharacters);
 router.get("/:id", getCharacterById);
-router.get("/", createCharacter);
-router.get("/:id", updateCharacter);
-router.get("/:id", deleteCharacter);
+router.post("/", createCharacter);
+router.put("/:id", updateCharacter);
+router.delete("/:id", deleteCharacter);
 
 export default router;
