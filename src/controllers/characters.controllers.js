@@ -32,6 +32,8 @@ export const createCharacter = async (req, res) => {
     try {
         const {name, ki, race, gender, description } = req.body; //req.body es la info enviada por el usuario
 
+        console.log(req.body)
+
         // Acá van a ir las validaciones
         if (!name || !ki || !race || !gender) {
             res.status(400).json({ error: "Faltan campos obligatorios"});
