@@ -9,6 +9,7 @@
   "name": "tp",
   "version": "1.0.0",
   "main": "app.js",
+  "type":"module",
   "devDependencies": {},
   "scripts": {
     "dev": "nodemon app.js",

@@ -3,6 +3,7 @@ import dotenv from "dotenv"; //dotenv sirve para las variables de entorno (.env)
 
 dotenv.config(); // lee el archivo .env
 
+  // la constante sequelize es arbitraria pero se hace por convención, new Sequelize si es propio de sequelize
 const sequelize = new Sequelize(
   // process sirve para leer las variables de env como el nombre de la DB
   process.env.DB_NAME, // nombre que le puse a la DB

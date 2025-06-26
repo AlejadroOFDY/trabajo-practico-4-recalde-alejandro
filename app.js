@@ -10,7 +10,7 @@ app.use(express.json());
 // esto es simplemente qué queremos que pase cuando esa ruta suceda
 app.use("/api/characters", rutaPersonajes);
 
-// típico mensaje de que el servidor está funcionando
+// Inicia el servidor con el típico mensaje de que el servidor está funcionando
 app.listen(PORT, () => {
   console.log(`Servidor corriendo en http://localhost:${PORT}`);
 });
