@@ -2,7 +2,7 @@ import { DataTypes } from "sequelize";
 import sequelize from "../config/database.js";
 
 // Creando los objetos
-const personajeDB = sequelize.define("Personaje", {
+const Characters = sequelize.define("Character", {
   name: {
     type: DataTypes.STRING(30),
     allowNull: false,
@@ -21,4 +21,4 @@ const personajeDB = sequelize.define("Personaje", {
   },
 });
 
-export default personajeDB;
+export default Characters;

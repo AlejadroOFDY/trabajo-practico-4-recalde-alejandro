@@ -1,5 +1,8 @@
 import { Router } from "express";
 import {
-    todosLosPersonajes,
+    getAllCharacters,
+    getCharacterById,
+    createCharacter,
+    updateCharacter,
 
 } from "../routes/character.controllers.js"
